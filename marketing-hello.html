@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ryan Basque, Cristian Basque">
+    <meta name="description"
+        content="Você sabia que existem ferramentas que poderão auxiliar a sua escola a ter uma comunicação mais mais clara e objetiva? Com a Agenda Hello você poderá enviar mensagens, comunicados, lição de casa, arquivos PDF, imagens JPG e PNG e muito mais... Use o código promocional e ganhe 3 meses gratuíto!">
+    <title>Marketing Hello</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Lato:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Lato:wght@700&display=swap"
+        rel="stylesheet">
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .background-container {
+        width: 100vw;
+        max-width: 720px;
+        margin: 10px auto;
+        padding: 48px 5px 25px 5px;
+        background: #F4F4F4;
+        border-radius: 40px;
+    }
+
+    .background-container .container {
+        width: 90%;
+        max-width: 560px;
+        height: 100%;
+        margin: 0 auto;
+        -webkit-box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.01);
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.01);
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .background-container .container .top-container {
+        background: #FFFFFF;
+        border-radius: 8px;
+        padding: 28px 25px 25px 25px;
+    }
+
+    .background-container .container .top-container svg {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .background-container .container .top-container #head-title {
+        display: block;
+        margin-top: 1.2rem;
+        margin-bottom: 1.8rem;
+        text-align: center;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 0.9rem;
+        line-height: 19px;
+        /* Texts */
+        color: #212121;
+    }
+
+    .background-container .container .top-container .image-container {
+        position: relative;
+        border-radius: 8px;
+        margin-bottom: 40px;
+    }
+
+    .background-container .container .top-container .image-container img {
+        width: 100%;
+        height: 13rem;
+        border-radius: 8px;
+    }
+
+    .background-container .container .top-container .image-container div {
+        width: 100%;
+        height: 13rem;
+        position: absolute;
+        top: 0;
+        background: linear-gradient(135deg, #FFC000 0%, #FF12D9 100%), #C4C4C4;
+        mix-blend-mode: multiply;
+        opacity: 0.9;
+        border-radius: 8px;
+    }
+
+    .background-container .container .top-container h1 {
+        font-family: 'Lato', sans-serif;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 1.3rem;
+        line-height: 2.12rem;
+        margin-bottom: 25px;
+    }
+
+    .background-container .container .top-container .sub-title {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 1.37rem;
+        color: #515759;
+    }
+
+    .background-container .container .top-container .code-container {
+        width: 70%;
+        height: 56px;
+        background: #CD456A;
+        border-radius: 8px;
+    }
+
+    .background-container .container .top-container h2 {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1rem;
+        line-height: 56px;
+        color: #FFFFFF;
+        text-align: center;
+    }
+
+    .background-container .container .top-container p {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 0.81rem;
+        line-height: 1.25rem;
+        color: #B6B6B6;
+        margin-top: 25px;
+        margin-bottom: 40px;
+    }
+
+    .background-container .container .top-container .app-container img {
+        display: inline;
+        height: 40px;
+        width: 45%;
+    }
+
+    .background-container .container .bottom-container {
+        background: #FFFFFF;
+        border-radius: 8px;
+        padding: 32px 20px 34px 20px;
+    }
+
+    .background-container .container .bottom-container div {
+        width: 50%;
+        height: 30px;
+        display: inline-block;
+    }
+
+    .background-container .container .bottom-container div h3 {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 22px;
+        color: #0C1014;
+    }
+
+    .background-container .container .bottom-container div p {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 20px;
+        color: #515759;
+        margin-top: 8px;
+    }
+
+    .background-container .container .bottom-container div .number {
+        font-weight: 600;
+        margin: 0;
+        margin-top: 1rem;
+    }
+
+    .background-container .container .bottom-container div .icons {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .background-container .container .bottom-container div .icons svg {
+        margin-right: 10px;
+    }
+
+    @media (max-width: 400px) {
+        .background-container .container .top-container .image-container img {
+            width: 100%;
+            height: 13rem;
+            border-radius: 8px;
+        }
+
+        .background-container .container .top-container .image-container div {
+            height: 13rem;
+        }
+    }
+
+    @media (min-width: 470px) {
+        .background-container .container .top-container .image-container img {
+            width: 100%;
+            height: 19rem;
+            border-radius: 8px;
+        }
+
+        .background-container .container .top-container .image-container div {
+            height: 19rem;
+        }
+
+        .background-container .container .top-container .app-container img {
+            display: inline;
+            height: 60px;
+            width: 45%;
+        }
+    }
+
+    /*# sourceMappingURL=marketing.css.map */
+</style>
+
+<body>
+    <div class="background-container">
+        <div class="container">
+            <div class="top-container" style="margin-bottom: 40px;">
+
+                <svg width="105" height="32" viewBox="0 0 105 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12.8393 31V14.0629C12.8393 10.0829 11.38 7.87183 7.798 7.87183C6.55978 7.87183 5.14467 8.6236 4.74667 9.64071V0.39829H0.987794V31H4.74667V14.284C4.74667 12.2498 5.58689 11.2769 6.91356 11.2769C8.28444 11.2769 9.08044 12.2498 9.08044 14.284V31H12.8393ZM26.7655 25.1627V23.6591H23.0066V24.9416C23.0066 26.9758 22.1222 27.9487 20.7071 27.9487C19.292 27.9487 18.3633 26.9758 18.3633 24.9416V20.652H26.7655V14.0629C26.7655 10.1272 24.4659 7.87183 20.6628 7.87183C16.8597 7.87183 14.6044 10.1272 14.6044 14.0629V25.1627C14.6044 29.0984 16.904 31.3538 20.7071 31.3538C24.5102 31.3538 26.7655 29.0984 26.7655 25.1627ZM22.9624 17.6449H18.3633V14.284C18.3633 12.2498 19.2477 11.2769 20.6628 11.2769C22.0779 11.2769 22.9624 12.2498 22.9624 14.284V17.6449ZM32.3872 31V0.39829H28.6283V31H32.3872ZM38.4557 31V0.39829H34.6968V31H38.4557ZM52.5726 25.1627V14.0629C52.5726 10.1272 50.273 7.87183 46.4699 7.87183C42.6668 7.87183 40.3672 10.1272 40.3672 14.0629V25.1627C40.3672 29.0984 42.6668 31.3538 46.4699 31.3538C50.273 31.3538 52.5726 29.0984 52.5726 25.1627ZM48.8137 24.9416C48.8137 26.9758 47.885 27.9487 46.4699 27.9487C45.0548 27.9487 44.1261 26.9758 44.1261 24.9416V14.284C44.1261 12.2498 45.0548 11.2769 46.4699 11.2769C47.885 11.2769 48.8137 12.2498 48.8137 14.284V24.9416ZM64.3391 31V13.9303C64.3391 9.72916 62.8798 7.87183 59.7842 7.87183C58.1922 7.87183 56.7771 8.71205 56.158 10.1714V8.22561H54.6544V31H56.2907V14.4167C56.2907 11.2769 57.4847 9.46383 59.74 9.46383C61.8184 9.46383 62.7029 10.9232 62.7029 13.9303V31H64.3391ZM76.4525 25.2953V24.6762H74.8163V25.2953C74.8163 28.1698 73.5338 29.7618 71.4112 29.7618C69.2885 29.7618 68.0061 28.1698 68.0061 25.2953V19.8118H76.4525V13.9303C76.4525 9.86182 74.3741 7.87183 71.4112 7.87183C68.4483 7.87183 66.3699 9.86182 66.3699 13.9303V25.2953C66.3699 29.3638 68.4483 31.3538 71.4112 31.3538C74.3741 31.3538 76.4525 29.3638 76.4525 25.2953ZM74.8163 18.2198H68.0061V13.9303C68.0061 11.0558 69.2885 9.46383 71.4112 9.46383C73.5338 9.46383 74.8163 11.0558 74.8163 13.9303V18.2198ZM95.3011 8.22561H93.7091L90.8347 23.9687C90.4809 25.9587 90.3483 28.612 90.3483 28.612C90.3483 28.612 90.2598 25.9587 89.8618 23.9687L86.8547 8.22561H85.2185L82.1672 23.9687C81.7692 25.9587 81.6807 28.612 81.6807 28.612C81.6807 28.612 81.5481 25.9587 81.1943 23.9687L78.4525 8.22561H76.7721L80.929 31H82.3441L85.3954 15.08C85.7934 13.09 86.0145 10.2598 86.0145 10.2598C86.0145 10.2598 86.1914 13.09 86.5894 15.08L89.7292 31H91.0116L95.3011 8.22561ZM104.626 14.3283C104.626 14.3283 104.626 13.5323 104.626 13.1785C104.626 9.99449 103.079 7.87183 100.072 7.87183C97.0203 7.87183 95.2956 9.90605 95.2956 13.09C95.2956 15.5223 96.2685 16.9816 97.8163 18.3967L101.398 21.6691C102.592 22.7747 103.3 24.1013 103.3 25.7818C103.3 28.214 102.106 29.806 99.9832 29.806C97.8605 29.806 96.7107 28.1698 96.7107 25.6049V24.6762H95.0745V25.6049C95.0745 28.7004 96.4012 31.3538 99.9832 31.3538C103.123 31.3538 104.98 29.0984 104.98 25.7818C104.98 23.3496 104.007 21.7576 102.46 20.3425L98.8776 17.07C97.6836 15.9645 96.9761 14.7705 96.9761 13.09C96.9761 10.8789 98.1258 9.46383 100.072 9.46383C102.017 9.46383 102.99 11.0558 102.99 13.1785V14.3283H104.626Z"
+                        fill="#DA407E" />
+                </svg>
+                <span id="head-title">Hello! Estamos trazendo novidades 🔥</span>
+                <div class="image-container">
+                    <img src="https://uploaddeimagens.com.br/images/003/099/278/original/Mask_Group.png?1614196082"
+                        alt="homem falando em um megafone">
+                    <div></div>
+                </div>
+
+                <h1 class="title">Sua escola está tendo sucesso em se comunicar com colaboradores, educadores, pais e
+                    alunos?</h1>
+                <p class="sub-title" style="margin-bottom: 30px;">
+                    Você sabia que existem ferramentas que poderão auxiliar a sua escola a ter uma comunicação mais mais
+                    clara e objetiva? </p>
+                <p class="sub-title" style="margin-bottom: 30px;">Com a Agenda Hello você poderá enviar mensagens,
+                    comunicados, lição de casa,
+                    arquivos PDF, imagens
+                    JPG e PNG e muito mais... </p>
+
+                <p class="sub-title">Use o código promocional e ganhe 3 meses gratuíto!</p>
+                <h1 class="title" style="margin-top: 40px;">Use o código promocional:</h1>
+                <div class="code-container">
+                    <h2>HF21-SAYHELLO</h2>
+                </div>
+                <p>
+                    Oferecemos 3 meses gratuito; <br>
+                    Não cobramos taxa de instalação; <br>
+                    Sem tempo minimo de contrato (você pode cancelar quando quiser); <br>
+                    Administração, professores e pais são isentos de cobrança;
+                </p>
+                <h1 class="title">Aplicativos disponível para:</h1>
+                <div class="app-container">
+                    <img src="https://logodownload.org/wp-content/uploads/2017/05/disponivel-na-app-store-botao-1.png"
+                        alt="baixe na app store">
+                    <img style="margin-left: 0.5rem;"
+                        src="https://logodownload.org/wp-content/uploads/2017/04/disponivel-google-play-badge.png"
+                        alt="">
+                </div>
+            </div>
+            <div class="bottom-container">
+                <div>
+                    <h3>Nos siga</h3>
+                    <p>
+                        Para mais informações, promoções e
+                        novidades, nos siga nas redes sociais ou visite o nosso site
+                    </p>
+                    <div class="icons">
+                        <a style="text-decoration: none;" href="https://www.facebook.com/agendahello">
+                            <svg width="13" height="23" viewBox="0 0 13 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12.25 7.90625H7.9375V5.03125C7.9375 4.23775 8.5815 3.59375 9.375 3.59375H10.8125V0H7.9375C5.55556 0 3.625 1.93056 3.625 4.3125V7.90625H0.75V11.5H3.625V23H7.9375V11.5H10.8125L12.25 7.90625Z"
+                                    fill="#B1BCC0" />
+                            </svg>
+                        </a>
+                        <a style="text-decoration: none;" href="https://www.linkedin.com/company/agenda-hello/">
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.99004 7.34766H0.438232V22.0428H4.99004V7.34766Z" fill="#B1BCC0" />
+                                <path
+                                    d="M2.6918 5.42982C4.18211 5.42982 5.38361 4.21677 5.38361 2.71491C5.38361 1.21304 4.18211 0 2.6918 0C1.20149 0 0 1.21304 0 2.71491C0 4.21677 1.20149 5.42982 2.6918 5.42982Z"
+                                    fill="#B1BCC0" />
+                                <path
+                                    d="M12.2683 14.337C12.2683 12.269 13.2157 11.0444 15.041 11.0444C16.7162 11.0444 17.5133 12.2228 17.5133 14.337C17.5133 16.4511 17.5133 22.0543 17.5133 22.0543H22.042C22.042 22.0543 22.042 16.6822 22.042 12.7427C22.042 8.80318 19.8123 6.89697 16.693 6.89697C13.5738 6.89697 12.2683 9.32306 12.2683 9.32306V7.34753H7.90137V22.0427H12.2683C12.2683 22.0542 12.2683 16.6013 12.2683 14.337Z"
+                                    fill="#B1BCC0" />
+                            </svg>
+                        </a>
+                        <a style="text-decoration: none;" href="https://www.instagram.com/agendahello/">
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M15.8125 0H7.1875C3.21856 0 0 3.21856 0 7.1875V15.8125C0 19.7814 3.21856 23 7.1875 23H15.8125C19.7814 23 23 19.7814 23 15.8125V7.1875C23 3.21856 19.7814 0 15.8125 0ZM20.8438 15.8125C20.8438 18.5869 18.5869 20.8438 15.8125 20.8438H7.1875C4.41313 20.8438 2.15625 18.5869 2.15625 15.8125V7.1875C2.15625 4.41313 4.41313 2.15625 7.1875 2.15625H15.8125C18.5869 2.15625 20.8438 4.41313 20.8438 7.1875V15.8125Z"
+                                    fill="#B1BCC0" />
+                                <path
+                                    d="M11.5 5.75C8.32456 5.75 5.75 8.32456 5.75 11.5C5.75 14.6754 8.32456 17.25 11.5 17.25C14.6754 17.25 17.25 14.6754 17.25 11.5C17.25 8.32456 14.6754 5.75 11.5 5.75ZM11.5 15.0938C9.51912 15.0938 7.90625 13.4809 7.90625 11.5C7.90625 9.51769 9.51912 7.90625 11.5 7.90625C13.4809 7.90625 15.0938 9.51769 15.0938 11.5C15.0938 13.4809 13.4809 15.0938 11.5 15.0938Z"
+                                    fill="#B1BCC0" />
+                                <path
+                                    d="M17.6812 6.08486C18.1044 6.08486 18.4474 5.74183 18.4474 5.31867C18.4474 4.89552 18.1044 4.55249 17.6812 4.55249C17.2581 4.55249 16.915 4.89552 16.915 5.31867C16.915 5.74183 17.2581 6.08486 17.6812 6.08486Z"
+                                    fill="#B1BCC0" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div style="float:right; padding-left: 15px;">
+                    <h3>Entre em contato</h3>
+                    <p>
+                        contato@agendahello.com
+                        www.agendahello.com
+                    </p>
+                    <p class="number">(11) 98136-5622</p>
+                    <p class="email">suporte@agendahello.com</p>
+                </div>
+            </div>
+            <a href="#" style="font-family: Inter;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 21px;
+
+            margin: 26px auto;
+            display: block;
+            
+            text-align: center;
+            text-decoration-line: underline;
+            
+            color: #1890FF;">Unsubscribe</a>
+        </div>
+    </div>
+</body>
+
+</html>
